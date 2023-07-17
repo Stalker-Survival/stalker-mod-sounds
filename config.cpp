@@ -1,8 +1,5 @@
 class CfgPatches
 {
-    ///--------------------------------------------
-    ///
-    ///--------------------------------------------
     class CRDTN_Sounds
     {
         units[] = {""};
@@ -16,10 +13,11 @@ class CfgPatches
 
 class CfgMods
 {
+    /// @brief Combination of CSO and my custom modifications for inventory management 
     class CRDTN_Sounds
     {
-        name = "";
-        credits = "";
+        name = "CRDTN Sounds Overhaul";
+        credits = "Switzer [https://steamcommunity.com/sharedfiles/filedetails/?id=2810590959&searchtext=Complete+sound+overhaul]";
         author = "freeman@foxapo.com";
         type = "mod";
         dependencies[] = {"Game",
