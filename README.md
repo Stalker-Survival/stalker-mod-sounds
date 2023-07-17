@@ -1,11 +1,10 @@
-<h2 align="left"> FoxSounds</h2>
+<h2 align="left"> CRDTN Sounds overhaul</h2>
 
 - Adds various sound effect to the inventory interface management from **STALKER** games.
-	> <b>W.I.P.</b>, so you can expect bugs and unintentional behaviour
-	
-	> This mod is being tested and can be changed in the future. 
-	
-	> This mod is using third party assets and you are not able to re-distribute this asset for commercial purpose. 
+	> This mod is using third party assets and you are not able to re-distribute this asset for commercial purpose.
+ 	> Used mods to extend this system - CSO - Complete sound overhaul [https://steamcommunity.com/sharedfiles/filedetails/?id=2810590959&searchtext=Complete+sound+overhaul] THANK YOU <3 
+	> Added Inventory sounds as well
+ 	> Plan to add various custom sounds from my collection
 	
 <h3>License</h3>
 
