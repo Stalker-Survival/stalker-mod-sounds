@@ -154,6 +154,8 @@ class CfgSoundSets
 		frequencyRandomizer = 1;
 		volumeRandomizer = 1;
 	};
+
+	#include "aim_sound_sets.hpp"
 };
 
 class CfgSoundShaders
@@ -165,9 +167,6 @@ class CfgSoundShaders
 		range = 3500;
 		rangeCurve = "closeShotAttenuationCurve";
 	};
-
-	#include "aim_sound_shaders.hpp"
-
 	class closeShotRifle_SoundShader : base_closeShot_SoundShader
 	{
 		rangeCurve = "closeShotRifleCurve";
@@ -226,8 +225,7 @@ class CfgSoundShaders
 	class Glock19_silencerCloseShot_SoundShader : base_ProfessionalSilenced_closeShot_SoundShader
 	{
 		samples[] = {
-			{"CRDTN_Sounds\Data\sounds\weapons\GLOCK\glock_shot_sil", 1}
-		};
+			{"CRDTN_Sounds\Data\sounds\weapons\GLOCK\glock_shot_sil", 1}};
 	};
 
 	// AK
@@ -235,12 +233,12 @@ class CfgSoundShaders
 	class AK_closeShot_SoundShader : closeShotRifle_SoundShader
 	{
 		samples[] = {
-			{"CRDTN_Sounds\Data\sounds\weapons\ak103\ak103_shoot", 1},
-			{"CRDTN_Sounds\Data\sounds\weapons\ak103\ak103_shoot1", 1},
-			{"CRDTN_Sounds\Data\sounds\weapons\ak103\ak103_shoot2", 1},
-			{"CRDTN_Sounds\Data\sounds\weapons\ak103\ak103_shoot3", 1},
-			{"CRDTN_Sounds\Data\sounds\weapons\ak103\ak103_shoot4", 1},
-			{"CRDTN_Sounds\Data\sounds\weapons\ak103\ak103_shoot5", 1},
+			{"CRDTN_Sounds\Data\sounds\weapons\ak\ak_shoot", 1},
+			{"CRDTN_Sounds\Data\sounds\weapons\ak\ak_shoot1", 1}
+			// {"CRDTN_Sounds\Data\sounds\weapons\ak\ak_shoot2", 1},
+			// {"CRDTN_Sounds\Data\sounds\weapons\ak\ak_shoot3", 1},
+			// {"CRDTN_Sounds\Data\sounds\weapons\ak\ak_shoot4", 1},
+			// {"CRDTN_Sounds\Data\sounds\weapons\ak\ak_shoot5", 1},
 		};
 		volume = 0.70794576;
 	};
@@ -265,35 +263,25 @@ class CfgSoundShaders
 
 	// M4
 
-	// class M4_closeShot_SoundShader : closeShotRifle_SoundShader
-	// {
-	// 	samples[] = {
-	// 		{"CRDTN_Sounds\Data\sounds\weapons\M4A1\m4a1_shoot", 1},
-	// 		{"CRDTN_Sounds\Data\sounds\weapons\M4A1\m4a1_shoot1", 1},
-	// 		{"CRDTN_Sounds\Data\sounds\weapons\M4A1\m4a1_shoot2", 1},
-	// 		{"CRDTN_Sounds\Data\sounds\weapons\M4A1\m4a1_shoot3", 1},
-	// 		{"CRDTN_Sounds\Data\sounds\weapons\M4A1\m4a1_shoot4", 1},
-	// 		{"CRDTN_Sounds\Data\sounds\weapons\M4A1\m4a1_shoot5", 1},
-	// 	};
-	// 	volume = 1.0;
-	// };
+	class base_ProfessionalSilenced_midShot_SoundShader;
+	class base_ProfessionalSilenced_distShot_SoundShader;
+	class base_ProfessionalSilenced_tailForest_SoundShader;
+	class base_ProfessionalSilenced_tailHouses_SoundShader;
+	class base_ProfessionalSilenced_tailInterior_SoundShader;
+	class base_ProfessionalSilenced_tailMeadows_SoundShader;
+	class base_ProfessionalSilenced_tailTrees_SoundShader;
+	class base_HomeSilenced_closeShot_SoundShader;
+	class base_HomeSilenced_midShot_SoundShader;
+	class base_HomeSilenced_distShot_SoundShader;
+	class base_HomeSilenced_tailForest_SoundShader;
+	class base_HomeSilenced_tailHouses_SoundShader;
+	class base_HomeSilenced_tailInterior_SoundShader;
+	class base_HomeSilenced_tailMeadows_SoundShader;
+	class base_HomeSilenced_tailTrees_SoundShader;
 
-	// class M4_silencerCloseShot_SoundShader : base_ProfessionalSilenced_closeShot_SoundShader
-	// {
-	// 	samples[] = {{"CRDTN_Sounds\Data\sounds\weapons\M4A1\m4a1_shot_sil", 1}};
-	// 	volume = 1.0;
-	// };
+	#include "M4A1\m4a1.hpp"
 
-	// class M4_midShot_SoundShader : midShotRifle_SoundShader
-	// {
-	// 	samples[] = {{"CRDTN_Sounds\Data\sounds\weapons\_distance_shooting_mid\scar_distant", 1}};
-	// 	volume = 0.56234133;
-	// };
-	// class M4_distShot_SoundShader : distShotRifle_SoundShader
-	// {
-	// 	samples[] = {{"CRDTN_Sounds\Data\sounds\weapons\_distance_shooting_far\scar_distant", 1}};
-	// 	volume = 1.0;
-	// };
+	// AIM SOUNDS
 
-	// Aim sounds
+	#include "aim_sound_shaders.hpp"
 };
