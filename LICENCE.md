@@ -1,4 +1,4 @@
-<h2 align="left"> CRDTN Sounds overhaul</h2>
+# CRDTN Sounds overhaul
 
 - Adds various sound effect to the inventory interface management from **STALKER** games.
 	> This mod is using third party assets and you are not able to re-distribute this asset for commercial purpose.
@@ -6,7 +6,7 @@
 	> Added Inventory sounds as well
  	> Plan to add various custom sounds from my collection
 	
-<h3>License</h3>
+## License
 
 [GSC GameWorld](https://www.gsc-game.com/index.php?t=community&s=forums&s_game_type=xr&thm_page=1&thm_id=20587&sec_id=16&offset=240)
 
@@ -31,5 +31,7 @@ You can also go through the links:
 - [NexusMods](https://www.nexusmods.com/news/3445)
 
 
-
-
+[WeaponSounds]
+```
+Mod is using various weapon sonds from different games. The original CSO mod used Tarkov sounds and you must be aware that these sounds can be licenced. Do not monetize these sounds and use it wisely. 
+```

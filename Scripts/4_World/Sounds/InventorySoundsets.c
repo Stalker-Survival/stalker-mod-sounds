@@ -16,6 +16,11 @@ class InventorySoundsets
 
     static string GetSoundSet(ItemBase item)
     {
+        if(!item)
+        {
+            return "";
+        }
+
         if (item.IsClothing())
         {
             return SOUNDSET_CLOTH;

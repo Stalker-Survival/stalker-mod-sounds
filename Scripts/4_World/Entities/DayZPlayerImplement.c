@@ -1,4 +1,5 @@
   /// @brief inspired class by AimSounds mod
+//! USES CODE FROM AimSounds MOD - https://steamcommunity.com/sharedfiles/filedetails/?id=2550932214&searchtext=AimSounds !/
 modded class DayZPlayerImplement extends DayZPlayer
 {
 
