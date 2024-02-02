@@ -18,18 +18,11 @@ class CfgPatches
 class CfgSoundSets
 {
     #include "inventory\inventory_sound_sets.hpp"
-    #include "creatures\creatures_sound_sets.hpp"
     #include "fx\fx_sound_sets.hpp"
 };
 
 class CfgSoundShaders
 {
     #include "inventory\inventory_sound_shaders.hpp"
-    #include "creatures\creatures_sound_shaders.hpp"
     #include "fx\fx_sound_shaders.hpp"
-};
-
-class CfgSounds
-{
-    #include "creatures\creatures_sounds.hpp"
 };

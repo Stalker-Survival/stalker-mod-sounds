@@ -1,6 +1,8 @@
 class SoundShader_Inv_Base
 {
     volume = 0.5;
+    range = 10;
+    rangeCurve = "defaultAnimalAttenuationCurve";
 };
 
 class SoundShader_InvOpen : SoundShader_Inv_Base
@@ -11,6 +13,11 @@ class SoundShader_InvOpen : SoundShader_Inv_Base
 class SoundShader_InvClose : SoundShader_Inv_Base
 {
     samples[] = {{"CRDTN_Sounds\Data\sounds\inv_close", 1}};
+};
+
+class SoundShader_InvSlot : SoundShader_Inv_Base
+{
+    samples[] = {{"CRDTN_Sounds\Data\sounds\inv_slot", 1}};
 };
 
 class SoundShader_InvMove_Generic : SoundShader_Inv_Base

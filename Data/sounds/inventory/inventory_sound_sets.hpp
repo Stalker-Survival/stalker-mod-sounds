@@ -1,8 +1,10 @@
 class SoundSet_Inv_Base
 {
-    volumeFactor = 0.2;
+    volumeFactor = 1.0;
     frequencyFactor = 1;
-    spatial = 0;
+    frequencyRandomizer = 0.5;
+    spatial = 1;
+    doppler = 0;
 };
 
 class SoundSet_InvOpen : SoundSet_Inv_Base
@@ -30,7 +32,6 @@ class SoundSet_InvMove_BigItem : SoundSet_Inv_Base
     soundShaders[] = {"SoundShader_InvMove_BigItem"};
 };
 
-
 class SoundSet_InvMove_Cloth : SoundSet_Inv_Base
 {
     soundShaders[] = {"SoundShader_InvMove_Cloth"};
@@ -55,8 +56,6 @@ class SoundSet_InvMove_Paper : SoundSet_Inv_Base
 {
     soundShaders[] = {"SoundShader_InvMove_Paper"};
 };
-
-
 
 class SoundSet_InvMove_Pills : SoundSet_Inv_Base
 {
