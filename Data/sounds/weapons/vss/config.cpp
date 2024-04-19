@@ -41,11 +41,12 @@ class reloadWeapon_SoundShader;
 class reloadWeaponINT_SoundShader;
 class CfgSoundShaders
 {
-	class VSS_Vintorez_Closure_SoundShader : base_ProfessionalSilenced_Closure_SoundShader
-	{
-		samples[] = {{"CRDTN_Sounds\Data\sounds\weapons\vss\vss_close_1", 1}};
-		volume = 1;
-	};
+	// ! This sound was not good, let the vanilla be the game :D 
+	// class VSS_Vintorez_Closure_SoundShader : base_ProfessionalSilenced_Closure_SoundShader
+	// {
+	// 	samples[] = {{"CRDTN_Sounds\Data\sounds\weapons\vss\vss_close_1", 1}};
+	// 	volume = 1;
+	// };
 	class VSS_Vintorez_closeShot_SoundShader : base_ProfessionalSilenced_closeShot_SoundShader
 	{
 		samples[] =

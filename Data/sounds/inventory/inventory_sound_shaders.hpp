@@ -7,11 +7,13 @@ class SoundShader_Inv_Base
 
 class SoundShader_InvOpen : SoundShader_Inv_Base
 {
+    volume = 1.0;
     samples[] = {{"CRDTN_Sounds\Data\sounds\inv_open", 1}};
 };
 
 class SoundShader_InvClose : SoundShader_Inv_Base
 {
+    volume = 1.0;
     samples[] = {{"CRDTN_Sounds\Data\sounds\inv_close", 1}};
 };
 

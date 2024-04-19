@@ -62,18 +62,17 @@ modded class DayZPlayerImplement extends DayZPlayer
         AS_SoundSynch();
     }
 
-    protected void PlayAimSound(Weapon_Base weapon, bool exit)
+    void PlayAimSound(Weapon_Base weapon, bool exit, float volume = 1)
     {
-        if (GetGame().IsServer() && GetGame().IsMultiplayer())
-            return;
-
-        string sound_set = GetAimSoundSet(weapon, exit);
+      	if (GetGame().IsDedicatedServer()) {
+			return;
+		}
 
         EffectSound sound;
-        PlaySoundSet(sound, sound_set, 0, 0);
+        PlaySoundSet(sound, GetAimSoundSet(weapon, exit), 0, 0);
         sound.SetSoundAutodestroy(true);
-        sound.SetSoundVolume(1);
-    }
+        sound.SetSoundVolume(volume);
+    } 
 
     protected string GetAimSoundSet(Weapon_Base weapon, bool exit)
     {

@@ -14,7 +14,7 @@ modded class Inventory
         super.OnShow();
         if (GetGame().IsClient())
         {
-            PlaySound(CRDTN_SOUND_INV_CLOSE);
+            PlaySound(CRDTN_SOUND_INV_OPEN);
         }
     }
 
